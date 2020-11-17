@@ -4,10 +4,6 @@ body {
     margin: 0;
   }
   
-header{
- border-bottom: 1px solid gray;
- position: sticky;
-}
 .Navbar {
     background-color:#263246;
     display: flex;
@@ -70,36 +66,7 @@ header{
       cursor: pointer;
      } 
   }
-.logo{
-    
-    color: white;
-    width: 30%;
-    max-width: 300px;
-    float: left;
-    margin-left:100px ;
-}
-.logo a {
-    color: white;
-    text-decoration: none;
-}
-.menu{
-   float: right;
-}
-ul{
-    list-style: none;
-    display: flex;
-}
-li{
-float: left;
-}
-li a {
-    display: block;
-    color: white;
-    text-align: justify;
-    padding: 10px;
-    text-decoration: none;
-    margin-left: 20px;
-}
+
 li a:hover{
     border-bottom:2px solid #d83a3a ;
 }
