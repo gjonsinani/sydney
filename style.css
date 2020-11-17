@@ -188,9 +188,25 @@ img{
     font-size: 3em;
     margin-top: 7%;
 }
+
+.four-section{
+    text-align: center;
+}
+.four-section h1{
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #263246;
+    font-weight: 300;
+}
+.four-section p{
+    color: gray;
+}
+
 .four{
 display: flex;
 }
+
 .four-box{
     background: transparent;
     padding: 30px;
@@ -203,12 +219,11 @@ display: flex;
 .four-box p{
     color: gray;
 }
-.four-box h1{
-    font-size: 3em;
-        text-align: center;
-        text-transform: uppercase;
-        color: #263246;
-        font-weight: 300;
+.four-box h2{
+    font-size: 2em;
+    text-align: justify;
+    color: #263246;
+    font-weight: 300;
 }
 footer{
     background: #263246;
@@ -314,7 +329,7 @@ footer{
     
     }
     .second-box h1{
-        padding:11%;
+        padding-top:37%;
         font-size: 2em;
         text-align: center;
         text-transform: uppercase;
@@ -322,7 +337,7 @@ footer{
         font-weight: 400;
     }
     .second-box p{
-        color: gray;
+        font-size: 1.4em;
     }
     .card{
         background: white;
@@ -354,8 +369,24 @@ footer{
         padding-bottom: 5%;
     }
 
-    .four h1{
-        font-size: 0.7em;
-        font-weight: 500;
+    .four{
+        display: flex;
+        flex-direction: column;
+      
+    } 
+    .four-section h1{
+        font-size: 1.8em;
+        font-weight: 400;
+        padding-top: 18%;
+    }
+    .four-section p{
+        font-size: 1.4em;
+    }
+    .four-box h2{
+        font-size: 1.5em;
+    }
+    .four-box p{
+        font-size: 1em;
+        text-decoration: none;
     }
   }
