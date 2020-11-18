@@ -4,8 +4,19 @@ body {
     margin: 0;
   }
   
-.Navbar {
+  header{
     background-color:#263246;
+  }
+  
+  .container{
+      max-width: 1600px;
+      position: absolute;
+      left: 50%;
+      transform:translateX(-50%);
+      margin: auto;
+  }
+
+.Navbar {
     display: flex;
     padding: 30px;
     font-family: sans-serif;
@@ -20,7 +31,6 @@ body {
     padding-left: 4%;
     text-transform: uppercase;
     font-weight: 600;
-
   }
   
   .Navbar__Items {
@@ -32,191 +42,240 @@ body {
     margin-left:auto;
     color: white;
   }
+
   .Navbar__Items--right a {
     color: white;
     text-decoration: none;
     margin-right: 30px;
   }
   
-  
   .Navbar__Link-toggle {
     display: none;
   }
   
-
 .active{
     border-bottom: 2px solid #d83a3a;
 }
 
-.first{
-    background-image: url("https://demo.athemes.com/sydney/wp-content/uploads/sites/103/2019/12/Slider_image-1.png");
-    background-position: 50% 0px;
+.welcome-section{
+    background: url("https://demo.athemes.com/sydney/wp-content/uploads/sites/103/2019/12/Slider_image-1.png") no-repeat center center/cover;
     width: 100%;
-    height: 660px;
+    height: 100vh;
     color: white;
     text-align: center;
-    display: grid;
-
-
 }
-.first h1{
+
+.welcome-section-box{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%) translateY(-50%) ;
+    top: 50%;
+    padding: 1 1.5rem;
+    color: white;
+    text-align: center;
+    justify-self: center;
+}
+
+.welcome-section-box h1{
     font-size: 3.8em;
     margin-top: 10%;
     font-weight: 400;
 }
-.first h2{
+.welcome-section-box h2{
     font-size: 2em;
     font-weight: 100;
     margin-bottom: 5%;
 }
 
-.first-box{
-    padding: 50px;
-    color: white;
-    text-align: center;
-    border: 0;
-
-}
-img{
-    width: 100%;
-    height:auto ;
-    vertical-align: middle;
-}
 .btn{
     background: #d83a3a;
-    padding: 12px 35px;
+    padding: 0.8rem 2.5rem;
     text-align: center;
     color: white;
-    border-radius: 3px;
-    border: solid  #d83a3a;
+    border-radius: 5px;
+    border: 0;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 1rem;
     position: relative;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 24px;
 }
+
 .btn:hover {
     color: rgb(187, 24, 24);
     background: transparent;
     border: 1px rgb(187, 24, 24) solid;
     text-decoration: none;
-
 }
-.second{
+
+.services-section{
     display: flex;
-  
-}
-.second-box{
     background: rgb(246, 246, 247);
-    padding: 10px;
-    text-align: center;
-    box-sizing: border-box;
-
+    padding: 3rem;
 }
-.second-box h1{
+
+.services-section-container{
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.services-section-container h2{
     font-size: 3em;
     text-align: center;
     text-transform: uppercase;
     color: #263246;
     font-weight: 300;
 }
-.second-box p{
-    color: gray;
-}
-.card{
-    background: white;
-    padding: 30px;
-    text-align: justify;
-    margin: 20px ;
-    position: relative;
-    box-sizing: border-box;
-    box-shadow: 1px 1px 50px 20px rgb(235, 235, 241);
 
-}
-.card p{
+.services-section-container p{
     color: gray;
+    text-align: center;
+    justify-self: center;
+    padding-bottom: 1rem;
 }
-.card h2{
+
+.services-section-cards{
+    max-width: 1600px;
+    left: 50%;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+.services-section-card{
+    background: white;
+    flex: 1;
+    padding: 2rem;
+    margin: 2rem ;
+    position: relative;
+    box-shadow: 1px 1px 50px 20px rgb(235, 235, 241);
+}
+
+.services-section i{
+    background: rgb(223, 184, 184);
+    color: rgb(212, 22, 22);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.services-section-card h3{
     font-size: 2em;
     color: #263246;
     font-weight: 300;
+    text-align: justify;
 }
 
-.third{
-    background-image: url("https://demo.athemes.com/sydney/wp-content/uploads/sites/103/2019/12/Slider_image-1.png");
-    background-position: 50% 0px;
-    height: 360px;
+.services-section-card p{
+    color: gray;
+    text-align: justify;
+}
+
+.nowmore-section{
+    background: url("https://demo.athemes.com/sydney/wp-content/uploads/sites/103/2019/12/Slider_image-1.png") no-repeat center center/cover;
+    width: 100%;
+    height: 470px;
     color: white;
-    padding: 50px;
     text-align: center;
-    border: 0;
-    
-}
-.third h1{
-    font-size: 3em;
-    margin-top: 7%;
 }
 
-.four-section{
-    text-align: center;
+.nowmore-section-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.four-section h1{
+
+.nowmore-section-box h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.news-section{
+    background: rgb(246, 246, 247);
+}
+
+.news-section-container{
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.news-section-container h2{
     font-size: 3em;
     text-align: center;
     text-transform: uppercase;
     color: #263246;
     font-weight: 300;
 }
-.four-section p{
+
+.news-section-container p{
     color: gray;
+    text-align: center;
 }
 
-.four{
+.news-section-cards{
 display: flex;
 }
 
-.four-box{
+.news-section-card{
     background: transparent;
     padding: 30px;
     text-align: justify;
     margin: 20px ;
     position: relative;
     box-sizing: border-box;
+}
 
-}
-.four-box p{
+.news-section-card p{
     color: gray;
+    text-align: justify;
 }
-.four-box h2{
-    font-size: 2em;
+
+.news-section-card h2{
+    font-size: 1.5rem;
     text-align: justify;
     color: #263246;
     font-weight: 300;
 }
+
+img{
+    width: 100%;
+    height:auto ;
+    vertical-align: middle;
+}
+
 footer{
-    background: #263246;
+    background-color: #263246;
     color: white;
 }
-.footer{
-    display: flex;
-    flex-wrap: wrap;
-}
-.footer-box{
-    padding: 3%;
-    text-align: left;
-    margin: 20px ;
-    position: relative;
-    box-sizing: border-box;
 
+.footer-container{
+    max-width: 1600px;
+    left: 50%;
+    transform: translateX(-50%)translateY(0);
+    align-content: center;
+    display: flex;
+    position: absolute;
 }
+
+.footer-box{
+    flex: 1;
+    margin:2rem 5rem ;
+    position: relative;
+    padding: 1rem;
+}
+
 .footer-box p{
     color: rgb(161, 156, 156);
 }
-.footer-box h1{
-    font-size: 3em;
+
+.footer-box h2{
+    font-size: 2.8em;
     text-align: center;
     text-transform: uppercase;
-    color: white;
     font-weight: 300;
 }
 
@@ -258,133 +317,4 @@ footer{
       cursor: pointer;
       margin-top: 5%;
      } 
-  header  {
-    background: #263246;
-}
-.menu{
-    width: 100%;
-}
-ul{
-    list-style: none;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-li{
-    text-align: center;
     }
-    li a {
-        display: inline-flex;
-        color: white;
-        text-align: justify;
-        text-decoration: none;
-       flex-direction: column;
-    }
-.logo{
-
-    color: white;
-    width: 100%;
-    position: relative;
-}
-.first{
-    background-image: url("https://demo.athemes.com/sydney/wp-content/uploads/sites/103/2019/12/Slider_image-1.png");
-    background-position: 50% -170px;
-    width: 100%;
-    height: 200px;
-    color: white;
-    text-align: center;
-
-
-}
-.first-box{
-    color: white;
-    text-align: center;
-    border: 0;
-
-}
-.first h1{
-    font-size: 2.4em;
-    margin-top: -7%;
-    font-weight: 400;
-}
-.first h2{
-    font-size: 1.1em;
-    margin-top: -4%;
-    font-weight: 100;
-}
-
-.second{
-    display: flex;
-    flex-direction: column;
-  
-} 
-.second-box{
-    background: rgb(246, 246, 247);
-    padding: 10px;
-    text-align: center;
-    box-sizing: border-box;
-
-}
-.second-box h1{
-    padding-top:37%;
-    font-size: 2em;
-    text-align: center;
-    text-transform: uppercase;
-    color: #263246;
-    font-weight: 400;
-}
-.second-box p{
-    font-size: 1.4em;
-}
-.card{
-    background: white;
-    padding: 30px;
-    text-align: justify;
-
-}
-.card p{
-    color: gray;
-}
-.card h2{
-    font-size: 1.4em;
-    color: #263246;
-    font-weight: 300;
-}
- 
-.third{
-    height: 350px;
-    color: white;
-    padding: 10%;
-    text-align: center;
-    border: 0;
-    
-}
-.third h1{
-    font-size: 2em;
-    margin-top: 15%;
-    font-weight: 400;
-    padding-bottom: 5%;
-}
-
-.four{
-    display: flex;
-    flex-direction: column;
-  
-} 
-.four-section h1{
-    font-size: 1.8em;
-    font-weight: 400;
-    padding-top: 18%;
-}
-.four-section p{
-    font-size: 1.4em;
-}
-.four-box h2{
-    font-size: 1.5em;
-}
-.four-box p{
-    font-size: 1em;
-    text-decoration: none;
-}
-
-}
