@@ -12,6 +12,7 @@ body {
       max-width: 1600px;
       position: absolute;
       left: 50%;
+      top: 0;
       transform:translateX(-50%);
       margin: auto;
   }
@@ -28,7 +29,6 @@ body {
 }
   .Navbar__Link-brand {
     font-size: 2.3em;
-    padding-left: 4%;
     text-transform: uppercase;
     font-weight: 600;
   }
@@ -46,7 +46,7 @@ body {
   .Navbar__Items--right a {
     color: white;
     text-decoration: none;
-    margin-right: 30px;
+    padding: 1rem;
   }
   
   .Navbar__Link-toggle {
@@ -115,7 +115,7 @@ body {
 }
 
 .services-section-container{
-    max-width: 1500px;
+    max-width: 1600px;
     margin: auto;
     padding: 0 2rem;
     overflow: hidden;
@@ -150,8 +150,7 @@ body {
     padding: 2rem;
     margin: 2rem ;
     position: relative;
-    box-shadow: 1px 1px 50px 20px rgb(235, 235, 241);
-}
+box-shadow: 0px 11px 40px 0px rgba(79,118,157,.1);}
 
 .services-section i{
     background: rgb(223, 184, 184);
@@ -178,13 +177,13 @@ body {
     height: 470px;
     color: white;
     text-align: center;
+   align-content: center;
 }
 
 .nowmore-section-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+left: 50%;
+transform: translateX(-50%) translateY(50%);
+position: absolute;
 }
 
 .nowmore-section-box h2{
@@ -197,7 +196,7 @@ body {
 }
 
 .news-section-container{
-    max-width: 1500px;
+    max-width: 1600px;
     margin: auto;
     padding: 0 2rem;
     overflow: hidden;
@@ -248,33 +247,50 @@ img{
 }
 
 footer{
-    background-color: #263246;
     color: white;
+    background-color: #263246;
 }
 
 .footer-container{
     max-width: 1600px;
-    left: 50%;
-    transform: translateX(-50%)translateY(0);
-    align-content: center;
-    display: flex;
-    position: absolute;
+    margin: auto;
+    padding: 2rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns:4.8fr 1.8fr 1.8fr 3.6fr;
+    grid-gap: 1.5rem;
 }
 
 .footer-box{
-    flex: 1;
-    margin:2rem 5rem ;
     position: relative;
-    padding: 1rem;
+    padding: 1.5rem;
+    text-align: justify;
 }
 
 .footer-box p{
     color: rgb(161, 156, 156);
 }
 
+.footer-box ul{
+    text-align: left;
+    margin-top: 3rem;
+}
+
+.footer-box ul li {
+    color: rgb(161, 156, 156);
+    list-style: none;
+    line-height: 1.5rem;
+    
+}
+.footer-box ul li a{
+    color: rgb(161, 156, 156);
+    text-decoration: none;
+}
+
+
 .footer-box h2{
-    font-size: 2.8em;
-    text-align: center;
+    font-size: 2.6em;
+    text-align: justify;
     text-transform: uppercase;
     font-weight: 300;
 }
@@ -283,16 +299,26 @@ footer{
     border-bottom: 2px #d83a3a solid;
     font-weight: 300;
 }
+.footer-box i {
+    color:#d83a3a;
+    padding: 0.4rem;
+}
 
+/*      Mobile    */
 
 @media only screen and (max-width: 768px) {
     .Navbar__Items,
     .Navbar {
+        background-color: #263246;
       flex-direction: column;
     }
-      
+    
   .Navbar__Items {
       display:none;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .Navbar .Navbar__Items.Navbar__Items--right .Navbar__Link a{
+        padding: 19px;
     }
       
   .Navbar__Items--right {
@@ -301,10 +327,11 @@ footer{
     .Navbar__Items--right a {
         color: white;
         text-decoration: none;
+        margin-top: 15px ;
       }
       
   .Navbar__ToggleShow {
-      display: flex;
+      display: block;
     }
     .Navbar__Link {
         align-self: center;
@@ -316,5 +343,76 @@ footer{
       position: relative;
       cursor: pointer;
       margin-top: 5%;
-     } 
+    } 
+
+    .container{
+        position: relative;
+        margin: auto;
+    }
+    
+    .welcome-section{
+        position: relative;
+        height: 250px;
+    }
+
+    .welcome-section-box h1{
+        font-size: 1.1rem;
+    }
+
+    .welcome-section-box h2{
+        font-size: 0.9rem;
+    }
+
+    .btn{
+        padding: 0.4rem 1.25rem;
+        border-radius: 5px;
+        border: 0;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        position: relative;
+        font-weight: 400;
+    }
+
+    .services-section-container h2{
+        font-size: 2.1rem;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .services-section-cards{
+        display: block;
+    }
+     .services-section-card{
+        display: block;
+        text-align: left;
+    }
+
+    .services-section i, .services-section-card h3{
+        align-self: center;
+        font-size: 1.8rem;
+    } 
+    .nowmore-section-box{
+        position: relative;
+        vertical-align: middle;
+    }
+    .nowmore-section-box{
+        padding: 1rem;
+    }
+    .news-section-container h2{
+        font-size: 2.1em;
+        text-align: center;
+        text-transform: uppercase;
+        color: #263246;
+        font-weight: 300;
+    }
+    
+    .news-section-cards{
+        display: flex;
+        flex-direction: column;
+    }
+   .footer-container{
+       display: grid;
+       grid-template-columns: 1fr;
+    }
+
     }
