@@ -1,3 +1,5 @@
+@media(max-width:768px){
+
 .Navbar__Items,
 .Navbar {
     background-color: #263246;
@@ -115,4 +117,4 @@
    display: grid;
    grid-template-columns: 1fr;
 }
-
+}
