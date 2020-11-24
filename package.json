@@ -1,0 +1,22 @@
+{
+  "name": "sydney",
+  "version": "1.0.0",
+  "description": "sydney",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gjonsinani/sydney.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gjonsinani/sydney/issues"
+  },
+  "homepage": "https://github.com/gjonsinani/sydney#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

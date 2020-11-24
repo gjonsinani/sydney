@@ -1,0 +1,254 @@
+@import 'config';
+@import 'utilities';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: "Raleway",sans-serif;
+    line-height: 1.6;
+    background: $color-light;
+}
+
+a {
+    text-decoration: none;
+    color: $color-light;
+    font-size: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+h2, h3, h4{
+    text-transform: uppercase;
+    color: $color-dark;
+}
+
+img{
+    width: 100%;
+    height:auto ;
+    vertical-align: middle;
+}
+
+#header {
+    //Header Home
+    &-home{
+        background:$bg-image;
+        height: 100vh;
+ 
+
+    //Header Content
+    .header-content{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        color: $color-light;
+        line-height: 2;
+
+        h1{
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: 2;
+        }
+
+        p{
+            font-size: 1rem;
+            line-height: 3;
+        }
+    }
+   }
+    &-inner{
+
+    }
+}
+
+
+
+#logo{
+    width: 180px;
+    height: 55px;
+}
+
+.Navbar {
+    display: flex;
+    padding: 2rem;
+    font-family: sans-serif;
+    color: white;
+    justify-content: space-between;
+  }
+  
+  .Navbar__Link {
+ text-align: center;
+}
+  .Navbar__Link-brand {
+    font-size: 2.3em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+
+  .Navbar__Items {
+    display: flex;
+    padding: 10px;
+  }
+  
+  .Navbar__Items--right {
+    margin-left:auto;
+    color: $color-light;
+  }
+  
+  .Navbar__Items--right a {
+    color: $color-light;
+    text-decoration: none;
+    padding: 1rem;
+
+    &.current {
+        border-bottom: 2.5px $color-red solid;
+    }
+  }
+  
+  .Navbar__Link-toggle {
+    display: none;
+  }
+
+  // Home Sections
+
+  #home {
+      &-a{
+          background-color: $bg-color;
+          .services{
+              margin-top: 3rem;
+              display: grid;
+              grid-gap: 2rem;
+              grid-template-columns: repeat(3, 1fr);
+
+              &-box{
+
+                box-shadow: 0px 11px 40px 0px rgba(79,118,157,.1);
+                margin: .5rem;
+                padding: 1rem;
+                background-color: $color-light;
+
+                h3{
+                    font-size: 1.8em;
+                    color: $color-dark;
+                    font-weight: 300;
+                    text-align: justify;
+                    padding: .5rem;
+
+                }
+                
+                p{
+                    color: $color-p;
+                    text-align: justify;
+                    padding: .75rem;
+                }
+        
+              }
+
+              .fas{
+                  color: $color-red;
+                  padding: 1rem;
+                  background-color: lighten($color-red, 50%);
+                  border-radius: 50px;
+              }
+          }
+      }
+
+      &-b{
+        .nowmore{
+            background:$bg-image;
+            height: 300px;
+    
+
+            .nowmore-box{
+                color: $color-light;
+                line-height: 2;
+        
+                
+                h2{
+                    font-size: 3rem;
+                    font-weight: 400;
+                    line-height: 2;
+                    color: $color-light;
+                }
+
+            }
+        }
+      }
+
+      &-c{
+
+        .news{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 2rem;
+            padding: 1rem;
+
+
+
+            .news-box{
+                h3{
+                    font-size: 1.8em;
+                    color: $color-dark;
+                    font-weight: 300;
+                    text-align: justify;
+                    padding: .5rem;
+
+                }
+            
+                p{
+                    color: $color-p;
+                    text-align: justify;
+                    padding: .75rem;
+                }
+             }
+          }
+      }
+  }
+
+  .bottom-line{
+      align-self: center;
+      max-width: 110px;
+      border-bottom: $color-red 3px solid;
+  }
+
+  #footer{
+      &-home{
+          background-color: $color-dark;
+
+          .footer-boxes{
+              display: grid;
+              grid-template-columns: 3fr 2fr 2fr 3fr;
+              grid-gap: 2fr;
+
+              .footer-box{
+                  padding: 0;
+                  margin: auto;
+                  color: $color-p; 
+
+                  a{
+                      color: $color-p;
+                  }
+
+                  h2, h3{
+                      color: $color-light;
+                      padding: 1rem 0;
+                      font-weight: 400;
+                  }
+
+                  .fas{
+                      color: $color-red;
+                      padding: .7rem;
+                  }
+              }
+          }
+      }
+  }
+  
