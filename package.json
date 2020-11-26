@@ -4,7 +4,8 @@
   "description": "sydney",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "prod": "node-sass  scss/ -o dist/css/ --recursive",
+    "watch": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "repository": {
     "type": "git",
