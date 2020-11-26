@@ -96,67 +96,67 @@ img {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translate(-50%) translateY(-50%);
     text-align: center;
     color: white;
     line-height: 2; }
     #header-home .header-content h1 {
       font-size: 3rem;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 2; }
     #header-home .header-content p {
       font-size: 1rem;
       line-height: 3; }
 
-#logo {
-  width: 180px;
-  height: 55px; }
+.navbar {
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
-.Navbar {
-  display: flex;
-  padding: 2rem;
-  font-family: sans-serif;
-  color: white;
-  justify-content: space-between; }
-
-.Navbar__Link {
-  text-align: center; }
-
-.Navbar__Link-brand {
-  font-size: 2.3em;
-  text-transform: uppercase;
-  font-weight: 600; }
-
-.Navbar__Items {
-  display: flex;
-  padding: 10px; }
-
-.Navbar__Items--right {
-  margin-left: auto;
-  color: white; }
-
-.Navbar__Items--right a {
-  color: white;
-  text-decoration: none;
-  padding: 1rem; }
-  .Navbar__Items--right a.current {
-    border-bottom: 2.5px #bb1818 solid; }
-
-.Navbar__Link-toggle {
+.main-nav {
+  list-style-type: none;
   display: none; }
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9); }
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto; }
+
+.logo {
+  display: inline-block;
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-left: 20px; }
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px; }
+
+.active {
+  display: block;
+  background-color: rgba(38, 50, 70, 0.5); }
 
 #home-a {
   background-color: #f6f6f7; }
   #home-a .services {
     margin-top: 3rem;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr); }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
     #home-a .services-box {
+      width: 300px;
       box-shadow: 0px 11px 40px 0px rgba(79, 118, 157, 0.1);
-      margin: .5rem;
+      background-color: white;
       padding: 1rem;
-      background-color: white; }
+      margin: 1rem; }
       #home-a .services-box h3 {
         font-size: 1.8em;
         color: #263246;
@@ -166,7 +166,7 @@ img {
       #home-a .services-box p {
         color: gray;
         text-align: justify;
-        padding: .75rem; }
+        padding: .5rem; }
     #home-a .services .fas {
       color: #bb1818;
       padding: 1rem;
@@ -180,26 +180,26 @@ img {
     color: white;
     line-height: 2; }
     #home-b .nowmore .nowmore-box h2 {
-      font-size: 3rem;
       font-weight: 400;
-      line-height: 2;
       color: white; }
 
 #home-c .news {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  padding: 1rem; }
-  #home-c .news .news-box h3 {
-    font-size: 1.8em;
-    color: #263246;
-    font-weight: 300;
-    text-align: justify;
-    padding: .5rem; }
-  #home-c .news .news-box p {
-    color: gray;
-    text-align: justify;
-    padding: .75rem; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  #home-c .news .news-box {
+    width: 300px;
+    padding: 1rem; }
+    #home-c .news .news-box h3 {
+      font-size: 1.8em;
+      color: #263246;
+      font-weight: 300;
+      text-align: justify;
+      padding: .5rem; }
+    #home-c .news .news-box p {
+      color: gray;
+      text-align: justify;
+      padding: .75rem; }
 
 .bottom-line {
   align-self: center;
@@ -209,10 +209,11 @@ img {
 #footer-home {
   background-color: #263246; }
   #footer-home .footer-boxes {
-    display: grid;
-    grid-template-columns: 3fr 2fr 2fr 3fr;
-    grid-gap: 2fr; }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
     #footer-home .footer-boxes .footer-box {
+      width: 218px;
       padding: 0;
       margin: auto;
       color: gray; }
@@ -225,3 +226,27 @@ img {
       #footer-home .footer-boxes .footer-box .fas {
         color: #bb1818;
         padding: .7rem; }
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center; }
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end; }
+  .main-nav li {
+    margin: 0; }
+  .nav-links {
+    margin-left: 40px; }
+  .logo {
+    margin-top: 0; }
+  .navbar-toggle {
+    display: none; }
+  .logo:hover,
+  .nav-links:hover {
+    color: white; } }
