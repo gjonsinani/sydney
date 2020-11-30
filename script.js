@@ -14,3 +14,9 @@ let navBarToggle = document.getElementById("js-navbar-toggle");
 navBarToggle.addEventListener("click", function() {
   mainNav.classList.toggle("active");
 });
+
+// window.addEventListener("resize", function(){
+//   if(window.innerWidth > 768){
+//     mainNav.classList.remove("active")
+//   }
+// });

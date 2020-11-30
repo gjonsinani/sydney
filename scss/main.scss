@@ -75,9 +75,17 @@ img{
   
   .main-nav {
     list-style-type: none;
-    display: none;
+    height: 0;
+    transition: all 300ms ease;    
+
   }
-  
+
+  .active {
+    height: 180px;
+    background-color: rgba($color-dark, 0.5);
+    border-radius: 25px;
+  }  // Home Sections
+
   .nav-links,
   .logo {
     text-decoration: none;
@@ -87,7 +95,7 @@ img{
   
   .main-nav li {
     text-align: center;
-    margin: 15px auto;
+    padding: .2rem;
   }
   
   .logo {
@@ -95,6 +103,8 @@ img{
     font-size: 2rem;
     margin-top: 10px;
     margin-left: 20px;
+    transform: rotate(360deg);
+    transition: transform 700ms ease;
   }
   
   .navbar-toggle {
@@ -106,13 +116,16 @@ img{
     font-size: 24px;
   }
   
-  .active {
-    display: block;
-    background-color: rgba($color-dark, 0.5);
-  }  // Home Sections
+  .logo:hover,
+  .nav-links,
+  .navbar-toggle:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+
 
   #home {
       &-a{
+          
           background-color: $bg-color;
           .services{
               margin-top: 3rem;
@@ -156,14 +169,16 @@ img{
       }
 
       &-b{
+          
         .nowmore{
             background:$bg-image;
             height: 300px;
-    
+
 
             .nowmore-box{
                 color: $color-light;
                 line-height: 2;
+                transform: translateY(25%);
         
                 
                 h2{
@@ -263,7 +278,12 @@ img{
       margin-right: 30px;
       flex-direction: row;
       justify-content: flex-end;
+      transition: height 300ms ease;
     }
+    .active {
+        height: auto;
+        background-color: transparent;
+      } 
   
     .main-nav li {
       margin: 0;

@@ -19,5 +19,8 @@
   "homepage": "https://github.com/gjonsinani/sydney#readme",
   "devDependencies": {
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3"
   }
 }
