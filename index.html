@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
  <!-- <link rel="stylesheet" href="style.css"> -->
     <!-- <link rel="stylesheet" media="screen and (max-width:768px)" href="tablet.css"> -->
     <!-- <link rel="stylesheet" media="screen and (max-width:500px)" href="mobile.css"> -->
@@ -12,34 +12,35 @@
 <body>
    <header id="header-home"> 
     <div class="container">
-        <nav class="navbar">
-            <span class="navbar-toggle" id="js-navbar-toggle">
+        <nav class="s-navbar d-flex justify-content-between align-items-center">
+            <span class="s-navbar-toggle position-absolute" id="js-navbar-toggle">
                     <i class="fas fa-bars"></i>
                 </span>
-            <a href="#" class="logo">Sydney</a>
-            <ul class="main-nav" id="js-menu">
-              <li>
-                <a href="#" class="nav-links">Home</a>
+            <a href="#" class="logo text-uppercase text-decoration-none d-inline-block">Sydney</a>
+            <ul class="s-main-nav position-relative z-index-2 d-flex justify-content-start mb-3 mr-3" id="js-menu">
+              <li class="text-center">
+                <a href="#" class="nav-links ml-5">Home</a>
               </li>
-              <li>
-                <a href="#" class="nav-links">Products</a>
+              <li class="text-center">
+                <a href="#" class="nav-links ml-5">Products</a>
               </li>
-              <li>
-                <a href="#" class="nav-links">About Us</a>
+              <li class="text-center">
+                <a href="#" class="nav-links ml-5">About Us</a>
               </li>
-              <li>
-                <a href="#" class="nav-links">Contact Us</a>
+              <li class="text-center">
+                <a href="#" class="nav-links ml-5">Contact Us</a>
               </li>
-              <li>
-                <a href="#" class="nav-links">Blog</a>
+              <li class="text-center">
+                <a href="#" class="nav-links ml-5">Blog</a>
               </li>
             </ul>
           </nav>
      </div>
-     <div class="header-content">
+     <div class="header-content position-absolute text-center">
         <h1>Welcome to Sydney</h1>
         <p>Feel free to look around</p>
         <a href="#" class="btn-red">Click to begin</a>
+        <button class="btn btn-primary">Click</button>
      </div>
     </div>
     </header>
@@ -47,29 +48,29 @@
     <!-- Section Services -->
     <section id="home-a" class="py-2">
         <div class="container">
-        <h2 class="section-title">Our Services</h2>
-        <p class="section-paragraph">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <div class="services">
-            <div class="services-box">
-              <i aria-hidden="true" class="fas fa-cog fa-3x my-2"></i>
-                <h3>UI-UX Design</h3>
-                <p>At vero eos et accusam et justo duo dolores et ea rebum. 
+        <h2 class="section-title text-center text-uppercase">Our Services</h2>
+        <p class="section-paragraph text-center py-2">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <div class="services d-flex justify-content-around flex-wrap mt-3">
+            <div class="services-box p-3 m-3">
+              <i aria-hidden="true" class="fas fa-cog fa-3x my-2 p-3"></i>
+                <h3 class="text-justify p-1">UI-UX Design</h3>
+                <p class="text-justify p-1">At vero eos et accusam et justo duo dolores et ea rebum. 
                     Stet gubergren no sea takimata sanctus.</p>
             </div>
-            <div class="services-box">
-                <i class="fas fa-image fa-3x my-2"></i>
-                <h3>UI-UX Design</h3>
-                <p>At vero eos et accusam et justo duo dolores et ea rebum. 
+            <div class="services-box p-3 m-3">
+                <i class="fas fa-image fa-3x my-2 p-3"></i>
+                <h3 class="text-justify p-1">UI-UX Design</h3>
+                <p class="text-justify p-1">At vero eos et accusam et justo duo dolores et ea rebum. 
                     Stet gubergren no sea takimata sanctus.</p>
             </div>
-            <div class="services-box">
-                <i class="fas fa-bullhorn fa-3x my-2"></i>
-                <h3>UI-UX Design</h3>
-                <p>At vero eos et accusam et justo duo dolores et ea rebum. 
+            <div class="services-box p-3 m-3">
+                <i class="fas fa-bullhorn fa-3x my-2 p-3"></i>
+                <h3 class="text-justify p-1">UI-UX Design</h3>
+                <p class="text-justify p-1">At vero eos et accusam et justo duo dolores et ea rebum. 
                     Stet gubergren no sea takimata sanctus.</p>
             </div>
         </div>
-         <p class="section-paragraph"><u>Viev All Services</u></p>
+         <p class="section-paragraph text-center py-2 "><u>Viev All Services</u></p>
         </div>
     </section>
 
@@ -86,25 +87,25 @@
     <!-- Section News -->
     <section id="home-c" class="py-2">
         <div class="container">
-        <h2 class="section-title">Latest News</h2>
-        <p class="section-paragraph">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <div class="news">
-            <div class="news-box">
+        <h2 class="section-title text-center text-uppercase">Latest News</h2>
+        <p class="section-paragraph text-center py-2 ">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <div class="news d-flex flex-wrap justify-content-around">
+            <div class="news-box p-2">
                 <img src="./images/1.png" alt="">
-                <h3>How it all began</h2>
-                <p>Random gibberish text to use in web pages, site templates and in typography demos.
+                <h3 class="text-center px-1 py-2">How it all began</h2>
+                <p class="text-justify p-1">Random gibberish text to use in web pages, site templates and in typography demos.
                      Get rid of Lorem Ipsum forever. A tool for web designers who want to save time.</p>
             </div>
-            <div class="news-box">
+            <div class="news-box p-2">
                 <img src="./images/2.png" alt="">
-                <h3>How it all began</h2>
-                <p>Random gibberish text to use in web pages, site templates and in typography demos.
+                <h3 class="text-center px-1 py-2">How it all began</h2>
+                <p class="text-justify p-1">Random gibberish text to use in web pages, site templates and in typography demos.
                     Get rid of Lorem Ipsum forever. A tool for web designers who want to save time.</p>
            </div>
-           <div class="news-box">
+           <div class="news-box p-2">
             <img src="./images/3.png" alt="">
-                <h3>How it all began</h2>
-                <p>Random gibberish text to use in web pages, site templates and in typography demos.
+                <h3 class="text-center px-1 py-2">How it all began</h2>
+                <p class="text-justify p-1">Random gibberish text to use in web pages, site templates and in typography demos.
                     Get rid of Lorem Ipsum forever. A tool for web designers who want to save time.</p>
            </div>
         </div>
@@ -112,13 +113,13 @@
     </section>
     <footer id="footer-home" class="py-2">
         <div class="container">
-            <div class="footer-boxes">
+            <div class="footer-boxes d-flex flex-wrap justify-content-around">
         <div class="footer-box">
-            <h2>SYDNEY </h2>
+            <h2 class="py-3">SYDNEY </h2>
             <P>Sydney is a powerful business theme that provides a fast way for companies or freelancers to create an awesome online presence. Also, Sydney provides all the construction blocks you need to rapidly create an engaging front page.</P>
         </div>
         <div class="footer-box">
-            <h3>About Us<div class="bottom-line"></div></h3>
+            <h3 class="py-3">About Us<div class="bottom-line align-self-center"></div></h3>
             <ul>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Our Work</a></li>
@@ -127,7 +128,7 @@
         </ul>
         </div>
         <div class="footer-box">
-            <h3>Services<div class="bottom-line"></div></h3>
+            <h3 class="py-3">Services<div class="bottom-line align-self-center"></div></h3>
             <ul>
             <li><a href="#">UX/UI Design</a></li>
             <li><a href="#">Development</a></li>
@@ -136,11 +137,11 @@
         </ul>
         </div>
         <div class="footer-box">
-            <h3>Contact<div class="bottom-line"></div></h3>
+            <h3 class="py-3">Contact<div class="bottom-line align-self-center"></div></h3>
             <ul>
-            <li><i class="fas fa-location-arrow"></i><a href="#">77 W Houston St New York, NY 10012</a></li>
-            <li><i class="fas fa-envelope"></i><a href="#">contact@company.com</a></li>
-            <li><i class="fas fa-phone-alt"></i><a href="#">+99 555 999</a></li>
+            <li><i class="fas fa-location-arrow p-2"></i><a href="#">77 W Houston St New York, NY 10012</a></li>
+            <li><i class="fas fa-envelope p-2"></i><a href="#">contact@company.com</a></li>
+            <li><i class="fas fa-phone-alt p-2"></i><a href="#">+99 555 999</a></li>
          </ul>
         </div>
      </div>
