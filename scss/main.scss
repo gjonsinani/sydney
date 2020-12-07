@@ -1,5 +1,21 @@
-@import 'config';
-@import 'utilities';
+// Variables
+$website-width: 1280px;
+$color-dark:#263246;
+$color-p: gray;
+$color-light: white;
+$bg-color:rgb(246, 246, 247);
+$bg-image:url("https://demo.athemes.com/sydney/wp-content/uploads/sites/103/2019/12/Slider_image-1.png") no-repeat center center/cover;
+$color-red:rgb(187, 24, 24);
+
+$primary: $color-red;
+$btn-primary-color: $color-light;
+$btn-primary-bg: $color-red!default;
+$btn-primary-border: $color-red  !default;
+$btn-padding-y: 1rem !default;
+$btn-padding-x: 2.5rem !default;
+$btn-font-weight: normal !default;
+$btn-border-radius: 5px; 
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 * {
@@ -34,6 +50,25 @@ img{
     width: 100%;
     height:auto ;
     vertical-align: middle;
+}
+
+.container{
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.section {
+  &-title{
+  font-size: 3em;
+  color: $color-dark;
+  font-weight: 300;
+  }
+
+  &-paragraph{
+      color: $color-p;
+  }
 }
 
 #header {
@@ -118,7 +153,11 @@ img{
     color: rgba(255, 255, 255, 1) !important;
   }
 
-
+  .btn:hover{
+    color:$color-red !important;
+    background: transparent !important;
+  }
+  
   #home {
       &-a{
           
